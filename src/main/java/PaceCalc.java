@@ -37,31 +37,32 @@ public class PaceCalc {
                     UserOutput.invalidDistance();
                     continue;
                 }
-            }
+            } else {
 
-            switch (menuSelection) {
-                case "1":
-                    distance = FIVE_K;
-                    break;
-                case "2":
-                    distance = TEN_K;
-                    break;
-                case "3":
-                    distance = HALF_MARATHON;
-                    break;
-                case "4":
-                    distance = MARATHON;
-                    break;
-                case "5":
-                    distance = FIFTY_K;
-                    break;
-                case "6":
-                    distance = FIFTY_MILER;
-                    break;
-                default:
-                    UserOutput.invalidMenuOption();
-                    continue;
-            }
+                switch (menuSelection) {
+                    case "1":
+                        distance = FIVE_K;
+                        break;
+                    case "2":
+                        distance = TEN_K;
+                        break;
+                    case "3":
+                        distance = HALF_MARATHON;
+                        break;
+                    case "4":
+                        distance = MARATHON;
+                        break;
+                    case "5":
+                        distance = FIFTY_K;
+                        break;
+                    case "6":
+                        distance = FIFTY_MILER;
+                        break;
+                    default:
+                        UserOutput.invalidMenuOption();
+                        continue;
+                    }
+                }
 
             while (true) {
                 UserOutput.durationPrompt();
