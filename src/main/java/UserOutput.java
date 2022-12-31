@@ -29,12 +29,28 @@ public class UserOutput {
         System.out.println("⠉⠉⠉⠉⠉⠉⠉⠉⠉⠉⠉⠈⠁⠈⠛⠛⠛⠛⠛⠛⠋⠉⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀");
     }
 
+    public static void distanceMenu(){
+        System.out.println("\nTo get started, please select an option from the menu below:\n");
+        System.out.println("\t1 --- 5K");
+        System.out.println("\t2 --- 10K");
+        System.out.println("\t3 --- Half-Marathon");
+        System.out.println("\t4 --- Marathon");
+        System.out.println("\t5 --- 50K");
+        System.out.println("\t6 --- 50 Miler");
+        System.out.println("\tc --- Custom Distance");
+        System.out.print("\nEnter selection here: ");
+    }
+
+    public static void invalidMenuOption(){
+        System.out.println("\nInvalid menu option! Try again.");
+    }
+
     public static void distancePrompt(){
         System.out.print("\nEnter your distance in miles: ");
     }
 
     public static void invalidDistance(){
-        System.out.println("\nYou must enter a valid distance");
+        System.out.println("\nInvalid Distance! Back to menu.");
     }
 
     public static void durationPrompt(){
@@ -50,7 +66,7 @@ public class UserOutput {
     }
 
     public static void goodbyeMessage(){
-        System.out.println("\nGoodbye! Run Easy.");
+        System.out.println("\nGoodbye and Happy Running!");
     }
 
 
